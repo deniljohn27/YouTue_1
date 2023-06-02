@@ -107,7 +107,7 @@ function createContent(data){//data is arrays
 
 function openVideo(videoId){
     // console.log("hi");
-    document.cookie = `id=${videoId};max-age=3; path=/videoPage.html`;
+    document.cookie = `id=${videoId};max-age=3; path=./videoPage.html`;
     window.location.href="http://127.0.0.1:5500/videoPage.html";
 }
  

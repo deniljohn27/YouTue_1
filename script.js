@@ -1,3 +1,4 @@
+
 // //Container extraction
 let contentArea=document.getElementById("content_area");
 let searchButton=document.getElementById("searchButton");
@@ -13,7 +14,9 @@ function callData(){
 async function loadData(){
     try{
         contentArea.innerText=" ";
+        
         let searchValue=document.getElementById("search").value;
+        if(!searchValue){searchValue="all";}
         // console.log(searchValue,"clicked")
         let url=`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${searchValue}&key=AIzaSyAKtX6Ds8cf2PvvmMOIXxGIbN8g-oEmKEM`
     // 

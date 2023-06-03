@@ -89,8 +89,31 @@ main{
 }
 .categories{
     /* border:2px solid blue; */
+    margin-bottom:20px;
     height:50px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
 }
+.categories>span{
+    display:block;
+    white-space: nowrap;
+    /* border: 2px solid red; */
+    font-size:15px ;
+    padding: 10px 10px;
+    margin-right: 15px;
+    border-radius: 12px;
+    background-color: #f2f2f2;
+    /* height:30px; */
+
+}
+.categories>span:hover{
+    background-color: #e1dfdf;
+}
+.categories::-webkit-scrollbar {
+        display: none; 
+    }
+
 .content_area{
     /* border:2px solid blue; */
     /* height:100vh; */

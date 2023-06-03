@@ -1,7 +1,7 @@
 
 
 
-let videoId=document.cookie.split("=")[1];
+let videoId=localStorage.getItem("id");//document.cookie.split("=")[1];
 let container=document.getElementById("main_container");
 console.log(container);
 openVideo(videoId);
